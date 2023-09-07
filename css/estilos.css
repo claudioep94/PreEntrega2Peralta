@@ -1,12 +1,13 @@
 * {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 
+
 body {
-    background-color: white;
+    background-color: beige;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     height: 100%;
@@ -19,11 +20,11 @@ body {
 }
 
 .miFondo {
-    background-color: white;
+    background-color: beige;
 }
 
 header {
-border-top: solid 15px red;
+    border-top: solid 15px red;
 
 }
 
@@ -43,15 +44,15 @@ header nav ul li {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    background-image: url(../img/bannercam.jpg);
+    background-image: url(../img/banderaCAM.png);
     background-size: cover;
     padding: 150px;
-    
+
 }
 
 .banner h1 {
-font-size: 30px;
-color: white;
+    font-size: 30px;
+    color: white;
 }
 
 .banner p {
@@ -70,13 +71,13 @@ color: white;
 
 .contenedorNoticias {
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     margin: 30px 0;
     height: 100%;
-  
-  
-    
+
+
+
 }
 
 .noticia {
@@ -84,8 +85,8 @@ color: white;
     flex-direction: column;
     align-items: center;
     padding: 25px;
-    background-color: #fafafa;
-    border-radius:5px ;
+    background-color: beige;
+    border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -95,7 +96,7 @@ color: white;
     object-fit: contain;
     border-radius: 5px;
     margin-bottom: 15px;
-}   
+}
 
 .fechaNoticia {
     font-size: 15px;
@@ -103,7 +104,7 @@ color: white;
     text-align: center;
     margin-bottom: 10px;
 }
- 
+
 .descripcionNoticia {
     margin-bottom: 15px;
 }
@@ -115,12 +116,12 @@ color: white;
     text-transform: uppercase;
     border-radius: 3px;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 footer {
-    background-color:red;
-    
+    background-color: red;
+
 }
 
 .contenedorPublicidad {
@@ -128,7 +129,7 @@ footer {
     grid-template-columns: 1fr;
     margin: 30px 0;
     height: 100%;
-    
+
 
 }
 
@@ -145,8 +146,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
     padding: 20px;
-    background-color: #fafafa;
+    background-color: beige;
     border-radius: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -191,62 +193,64 @@ footer {
     grid-area: sectionA;
 }
 
-.contenedorPublicidad{
+.contenedorPublicidad {
     grid-area: sectionB;
 }
 
 .contenedor {
     display: grid;
     grid-template-areas:
-    "nav nav nav"
-    "header header header"
-    "banner banner banner"
-    "sectionA sectionA sectionB"
-    "sectionA sectionA sectionB"
-    "footer footer footer"
+        "nav nav nav"
+        "header header header"
+        "banner banner banner"
+        "sectionA sectionA sectionB"
+        "sectionA sectionA sectionB"
+        "footer footer footer"
     ;
 }
 
-@media (min-width:480px) {
+
+@media (min-width:468px) {
     .contenedorNoticias {
         display: grid;
-       grid-template-columns:repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 50px;
-        margin: 30px 0; 
-    
-        }
-      
-}
+        margin: 30px 0;
 
+    }
+
+}
 @media (min-width:768px) {
     .contenedorNoticias {
         display: grid;
-         grid-template-columns:repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
         gap: 50px;
-        margin: 30px 0; 
-        
-        }
-      
+        margin: 30px 0;
+
+    }
+
 }
 
-@media (min-width:1024px){
+
+@media (min-width:1024px) {
     .contenedorNoticias {
         display: grid;
-       grid-template-columns:repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 50px;
-        margin: 30px 0; 
-       
-        }
-      
+        margin: 30px 0;
+
+    }
+
 }
 
 
 .contenedorHistoria {
-   display:grid;
-   grid-template-columns: 1fr;
-   margin: 30px 0;
-   height: 100%;
-   }
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px 0;
+    height: 100%;
+    
+}
 
 .contenedorHistoria h1 {
     font-size: 20px;
@@ -258,13 +262,14 @@ footer {
 .cajaTexto {
     display: flex;
     flex-direction: column;
+    justify-items: center;
     align-items: center;
-   font-size: 1rem;
+    font-size: 1rem;
     padding: 30px;
     margin-bottom: 5px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    
-    
+
+
 
 }
 
@@ -275,7 +280,7 @@ footer {
 }
 
 header {
-grid-area: header;
+    grid-area: header;
 }
 
 nav {
@@ -284,21 +289,201 @@ nav {
 
 .contenedorHistoria {
     grid-area: sectionA;
-    }
+}
 
 .contenedorPublicidad {
     grid-area: sectionB;
-}    
+}
 
 
 .contenedorClub {
     display: grid;
     grid-template-areas:
-    "nav nav nav"
-    "header header header"
-    "banner banner banner"
-    "sectionA sectionA sectionB"
-    "sectionA sectionA sectionB"
-    "footer footer footer"
+        "nav nav nav"
+        "header header header"
+        "banner banner banner"
+        "sectionA sectionA sectionB"
+        "sectionA sectionA sectionB"
+        "footer footer footer"
     ;
 }
+
+
+.contenedorPoliInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 50px 0;
+
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    background-color: beige;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.contenedorPoliInfo {
+    grid-area: sectionA;
+}
+
+.contenedorPublicidad {
+    grid-area: sectionB;
+}
+
+.contenedorPoli {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav"
+        "header header header"
+        "banner banner banner"
+        "sectionA sectionA sectionB"
+        "sectionA sectionA sectionB"
+        "footer footer footer"
+    ;
+}
+
+
+
+@media (min-width:400px) {
+    .contenedorPoliInfo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        margin: 30px 0;
+
+    }
+}
+
+@media (min-width:768px) {
+    .contenedorPoliInfo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin: 30px 0;
+
+    }
+
+}
+
+
+@media (min-width:1024px) {
+    .contenedorPoliInfo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        margin: 30px 0;
+
+    }
+
+}
+
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.contacto {
+    grid-area: sectionA;
+}
+
+
+.contenedorPublicidad{
+    grid-area: sectionB;
+}
+
+.contenedorContacto {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav"
+        "header header header"
+        "banner banner banner"
+        "sectionA sectionA sectionB"
+        "sectionA sectionA sectionB"
+        "footer footer footer"
+    ;
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px 50px;
+    margin:200px 200px;
+    width: 50%;
+    height: 50%;
+    
+}
+
+.formContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
+    
+}
+
+label {
+    color: rgb(172, 17, 17);
+    size: 15px;
+    margin-bottom: 15px;
+    
+}
+
+
+input,
+textarea {
+    padding: 5px 5px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border: 1px solid black;
+    }
+
+
+
+/*contenedorNoticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 30px 0;
+    height: 100%;
+
+
+
+}
+
+.noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
